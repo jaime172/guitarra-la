@@ -1,0 +1,12 @@
+.contenido{
+    display: grid;
+    gap: 4rem;
+}
+
+@media (min-width:768px){
+    .contenido{
+        grid-template-columns: repeat(2, 1fr);
+        /* agregamos align-items para que la foto no pierda la proporcion */
+        align-items: center;
+    }
+}
